@@ -11,7 +11,7 @@ For each clause:
 ---
 
 ### 1. `SELECT`
-   
+
 **Description:** `SELECT *` returns all columns from the provided table. You can also do `SELECT column_name_1, column_name_2` to return specific columns from the provided table.
 
 **Example:**
@@ -37,12 +37,24 @@ CREATE TABLE friends (
 
 ### 3. `INSERT INTO` — assigned to Deja
 
-**Description:** 
+**Description:**
+`INSERT INTO`is used to add a new record or row to a table.
 
-**Example:**
+**Examples:**
+The first table inserts data into columns in order:
 
 ```sql
+INSERT INTO friends
+VALUES ('Deja', 19982501);
+VALUES ('Diamond', 19960405)
+```
 
+The next table inserts data into columns by name:
+
+```sql
+INSERT INTO friends (name, birthday)
+VALUES ('Deja', 19982501);
+VALUES ('Diamond', 19960405)
 ```
 
 ### 4. `UPDATE` — assigned to Rucha
@@ -105,7 +117,7 @@ CREATE TABLE friends (
 
 ```
 
-### 10. `ON CONFLICT` — assigned to _____
+### 10. `ON CONFLICT` — assigned to **\_**
 
 **Description:**
 
@@ -115,7 +127,7 @@ CREATE TABLE friends (
 
 ```
 
-### 11. `LIKE` — assigned to _____
+### 11. `LIKE` — assigned to **\_**
 
 **Description:**
 
